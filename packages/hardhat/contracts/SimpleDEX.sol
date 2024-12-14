@@ -18,7 +18,7 @@ pragma solidity ^0.8.22;
 
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol"; // IMPLEMENTACION DE RECOMENDACION DEL PROFESOR
 
 
 contract SimpleDEX is Ownable {
