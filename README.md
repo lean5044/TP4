@@ -1,6 +1,4 @@
-# ETH Kipu
-
-## Trabajo Práctico 4 
+# ETHKipu - TP4
 
 Se implementan las mejoras sugeridas por el profesor en los contratos.
 
