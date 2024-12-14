@@ -5,8 +5,8 @@ pragma solidity ^0.8.22;
 // ETH Kipu TP4
 // Autor L.N.R.
 
-import {ERC20} from "@openzeppelin/contracts@5.1.0/token/ERC20/ERC20.sol";
-import {Ownable} from "@openzeppelin/contracts@5.1.0/access/Ownable.sol";
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract TokenA is ERC20, Ownable {
     constructor()

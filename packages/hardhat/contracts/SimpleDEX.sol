@@ -17,9 +17,11 @@ pragma solidity ^0.8.22;
 **/
 
 
-import "@openzeppelin/contracts@5.1.0/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
-contract SimpleDEX {
+
+contract SimpleDEX is Ownable {
 
     address owner;
     IERC20 public tokenA;
@@ -34,18 +36,22 @@ contract SimpleDEX {
     uint256 public price;
 
 
-    constructor(address _tokenA, address _tokenB) { 
-        owner = msg.sender; // Seteo el owner como el que deploya el contrato
+    constructor(address _tokenA, address _tokenB) 
+    Ownable(msg.sender)
+    { 
+        // MEJORA RECOMENDADA POR EL PROFESOR
+        // owner = msg.sender; // Seteo el owner como el que deploya el contrato
 
         tokenA = IERC20 (_tokenA);
         tokenB = IERC20 (_tokenB);
     }
 
     // MODIFICADORES
-    modifier onlyOwner {
-        require(msg.sender == owner, "Solo el owner puede ejecutar esta funcion");
-        _;
-    }
+    // SE COMENTA EL MODIFICADOR POR MEJORA RECOMENDADA POR EL PROFESOR
+    // modifier onlyOwner {
+    //     require(msg.sender == owner, "Solo el owner puede ejecutar esta funcion");
+    //     _;
+    // }
 
     // FUNCIONES SOLICITADAS
 
