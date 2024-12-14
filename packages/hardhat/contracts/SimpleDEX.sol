@@ -16,7 +16,7 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol"; // IMPLEMENT
 
 contract SimpleDEX is Ownable {
 
-    address owner;
+    //address owner;
     IERC20 public tokenA;
     IERC20 public tokenB;
     uint256 public amountA;
