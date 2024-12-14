@@ -37,6 +37,7 @@
     "verify": "yarn workspace @se-2/hardhat verify"
   },
   "devDependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
     "husky": "~8.0.3",
     "lint-staged": "~13.2.2"
   },
