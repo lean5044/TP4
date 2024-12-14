@@ -5,15 +5,8 @@ pragma solidity ^0.8.22;
 // Autor L.N.R.
 
 /**
-    El contrato SimpleDEX debe contar obligatoriamente y sin modificación de la interface con las siguientes funciones:
-
-        - constructor(address _tokenA, address _tokenB)
-        - addLiquidity(uint256 amountA, uint256 amountB)
-        - swapAforB(uint256 amountAIn)
-        - swapBforA(uint256 amountBIn)
-        - removeLiquidity(uint256 amountA, uint256 amountB)
-        - getPrice(address _token)
-
+Se despliegan los contratos con las modificaciones propuestas por el profesor. 
+Se utiliza Scaffold-eth para la interfaz grafica
 **/
 
 
